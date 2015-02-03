@@ -1,0 +1,12 @@
+[push]
+  default = simple
+[user]
+  name = Michal Svab
+  email = ???
+[core]
+  autocrlf = false
+[merge]
+  tool = diffmerge
+[mergetool "diffmerge"]
+  cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+  trustExitCode = true
